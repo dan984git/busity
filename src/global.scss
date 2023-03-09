@@ -1,0 +1,369 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// .headerBusapp {
+//   background: rgb(128, 159, 255) !important;
+// }
+body {
+  background: #e9eef1 !important;
+}
+a {
+  text-decoration: none;
+}
+.cardFav {
+  margin: 20px;
+  box-shadow: 1px 1px 1px 1px rgb(128, 159, 255);
+}
+.imgMapa {
+  overflow-y: auto;
+  max-width: 255% !important;
+  height: auto;
+}
+.btnMapa {
+  position: absolute;
+  width: 10%;
+}
+.imgBtnMapa {
+  width: 100%;
+  height: auto;
+}
+.imgPopover {
+  width: 100%;
+}
+.titlePopover {
+  color: #2daae1;
+  font-size: 19px;
+}
+.titlePopover2 {
+  color: #2daae1;
+  font-size: 16px;
+}
+.detailPopover {
+  color: #818181 !important;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.detailGray {
+  color: #818181 !important;
+}
+.numberPopover {
+  color: #2daae1;
+}
+.opEstacion {
+  background: rgb(243, 243, 243);
+}
+.opCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 10px;
+}
+.opIcon {
+  padding-right: 5px;
+}
+.dirBtn {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: none !important;
+  background-color: white;
+}
+.cardDir .cardBtnDir {
+  padding: 0px !important;
+  color: white !important;
+  box-shadow: 0px 5px 10px rgb(165, 164, 164);
+}
+.dirIcon {
+  font-size: 35px;
+  color: white;
+  background-color: #2daae1;
+  width: 100%;
+  height: 100%;
+}
+.puHeader {
+  display: flex;
+  padding: 0px !important;
+}
+.puHeader .imgPopoverCont {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  padding: 5px !important;
+}
+.puBG .list-md {
+  background: none !important;
+}
+.center {
+  text-align: center;
+}
+.tabH {
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0px 5px 10px rgb(165, 164, 164);
+  padding: 1%;
+  background-color: transparent;
+}
+.tabC {
+  background-color: white !important;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 0px -5px 10px rgb(165, 164, 164);
+}
+.tabC2 {
+  background-color: white !important;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#map {
+  height: 100%;
+}
+.mapaDir {
+  height: 80% !important;
+}
+.infoDir {
+  height: 0% !important;
+  display: none !important;
+}
+.contMap {
+  height: 40%;
+  padding: 10px;
+}
+.contMapaBus {
+  height: 85%;
+  padding: 10px;
+}
+#mapE {
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #aaaaaa !important;
+  height: 100%;
+}
+// #map {
+//   width: 100%;
+//   height: 100%;
+//   opacity: 0;
+//   transition: opacity 150ms ease-in;
+//   display: block;
+//   &.show-map{
+//     opacity: 1;
+//   }
+// }
+.ToastVerde {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.ToastRojo {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.gm-style-iw-t .gm-style-iw {
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+}
+.gm-style-iw-t .gm-style-iw .gm-style-iw-d {
+  padding: 0px !important;
+  overflow: hidden !important;
+}
+.btnsMap {
+  background-color: #2daae1;
+}
+.btnIzq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 18px;
+  border-right: 0.5px solid white;
+}
+.btnDer {
+  border-left: 0.5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 18px;
+}
+.btnVer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  color: white;
+  font-size: 18px;
+}
+.btnDer a {
+  text-decoration: none;
+  width: 100%;
+}
+.padLeft {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.miubicacion {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #ffffff;
+  color: #2daae1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 2px 2px 2px rgba(165, 164, 164, 0.7);
+}
+.resEst {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #ffffff;
+  color: #2daae1;
+  position: fixed;
+  bottom: 10px;
+  right: 67.5px;
+  box-shadow: 2px 2px 2px rgba(165, 164, 164, 0.7);
+}
+.llevame {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #ffffff;
+  color: #2daae1;
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  box-shadow: 2px 2px 2px rgba(165, 164, 164, 0.7);
+}
+.imgLlevame {
+  width: 100%;
+}
+.dirMapaBtn {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #ffffff;
+  color: #2daae1;
+  position: fixed;
+  bottom: 120px;
+  right: 10px;
+  box-shadow: 2px 2px 2px rgba(165, 164, 164, 0.7);
+}
+.aceptar {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #ffffff;
+  color: #2daae1;
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  box-shadow: 2px 2px 2px rgba(165, 164, 164, 0.7);
+}
+.cerrar {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #ffffff;
+  color: #2daae1;
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  box-shadow: 2px 2px 2px rgba(165, 164, 164, 0.7);
+}
+.alert-button {
+  background-color: #2daae1 !important;
+  color: white !important;
+}
+
+div.item-native {
+  padding: 0px !important;
+}
+
+.login-modal .modal-wrapper {
+  height: 52.5%;
+  top: 47.5%;
+  position: absolute;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.changePass-modal .modal-wrapper {
+  height: 52.5%;
+  top: 47.5%;
+  position: absolute;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.register-modal .modal-wrapper {
+  height: 65%;
+  top: 35%;
+  position: absolute;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.forgot-modal .modal-wrapper {
+  height: 42.5%;
+  top: 57.5%;
+  position: absolute;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.profileEdit-modal .modal-wrapper {
+  height: 50%;
+  top: 50%;
+  position: absolute;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.primary-input {
+  background: rgb(255, 255, 255);
+  --padding-start: 10px !important;
+  color: #999999;
+  box-shadow: 0px 5px 10px rgb(165, 164, 164);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-img {
+  display: flex;
+  align-content: center;
+}
+.imgM {
+  margin: auto;
+  width: 12.5%;
+}
+.headT {
+  border-radius: 0px 0px 25px 25px;
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.gm-style-cc {
+  display: none !important;
+}
+.toastDir {
+  background-color: rgba(0, 5, 7, 0.267) !important;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "busity",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
